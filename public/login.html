@@ -13,6 +13,7 @@
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
   </head>
   <body class="bg-light d-flex align-items-center min-vh-100">
+    <a href="#login-form" class="visually-hidden-focusable">Skip to main content</a>
     <main class="container">
       <div class="row justify-content-center">
         <div class="col-sm-10 col-md-6 col-lg-4">
@@ -25,24 +26,24 @@
                 Don't have an account? Enter any username and password — a new account will be created automatically.
               </div>
 
-              <div id="error-msg" class="alert alert-danger small d-none" role="alert"></div>
+              <div id="error-msg" class="alert alert-danger small d-none" role="alert" aria-live="assertive"></div>
 
               <form id="login-form" novalidate>
                 <div class="mb-3">
                   <label for="username" class="form-label fw-semibold">Username</label>
                   <input type="text" id="username" name="username" class="form-control"
-                         autocomplete="username" required>
+                         autocomplete="username" required aria-required="true" aria-describedby="error-msg">
                 </div>
                 <div class="mb-4">
                   <label for="password" class="form-label fw-semibold">Password</label>
                   <input type="password" id="password" name="password" class="form-control"
-                         autocomplete="current-password" required>
+                         autocomplete="current-password" required aria-required="true" aria-describedby="error-msg">
                 </div>
                 <button type="submit" id="sign-in-btn" class="btn btn-primary w-100">Sign In</button>
               </form>
             </div>
           </div>
-          <p class="text-center text-muted small mt-3">&copy; 2025 Max's Auto Dealership</p>
+          <p class="text-center text-muted small mt-3">&copy; 2026 Max's Auto Dealership</p>
         </div>
       </div>
     </main>

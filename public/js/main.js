@@ -37,7 +37,7 @@ const valueBadge = ( rating ) => {
   const colours = {
     'Great Deal': 'success',
     'Good Value': 'primary',
-    'Fair Price': 'warning',
+    'Fair Price': 'warning text-dark',
     'Premium':    'secondary'
   }
   return `<span class="badge bg-${colours[ rating ] || 'secondary'}">${rating}</span>`
